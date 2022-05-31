@@ -1,5 +1,11 @@
 import React from "react";
+import NavBar from "../NavBar";
 
 export default function Software() {
-    return <h2>Software</h2>;
+    return (
+        <div className="home-div">
+          <NavBar/>
+          
+        </div>
+    );
 }

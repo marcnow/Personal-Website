@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+div.home-div {
+    background-image: url(static/images/cubes.png);
+    background-color: #E3FDFD;
+    height: 100vh;
+    background-position: center;
+}
+
+div.landing-div {
+    color: #71C9CE;
+    
+}
+
+div.my-work {
+    background-color: #191919;
+}

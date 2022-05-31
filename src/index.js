@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Software from "./components/routes/Software";
 import Blog from "./components/routes/Blog";
+import Contact from "./components/routes/Contact"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
       <Route path='/' element={<App/>} />
       <Route path='/software' element={<Software/>} />
       <Route path='/blog' element={<Blog/>} />
-    </Routes>
+      <Route path='/contact' element={<Contact/>} />
+     </Routes>
   </BrowserRouter>
 );
 
