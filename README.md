@@ -1,3 +1,9 @@
+# TODO
+1. better landing page image
+2. color the navbar buttons depending on which route the user is
+3. the navabar walks with scrolling
+4. more social media (twitter, dockerhub)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

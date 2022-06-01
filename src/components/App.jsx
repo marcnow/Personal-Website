@@ -1,9 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
-import LandingDiv from "./LandingDiv";
-import SocialHomeGroup from "./SocialHomeGroup";
-import MyWork from "./MyWork";
-
+import LandingDiv from "./landingpage/LandingDiv";
+import SocialHomeGroup from "./landingpage/SocialHomeGroup";
+import AboutMe from "./me/AboutMe";
+import FutureVentures from "./me/FutureVentures"
+import Footer from "./footer/Footer"
+import ReadMoreButton from "./landingpage/ReadMoreButton"
 
 export default function App() {
   return (
@@ -12,9 +14,16 @@ export default function App() {
         <NavBar/>
         <LandingDiv />
         <SocialHomeGroup />
+        <ReadMoreButton />
       </div>
       <div>
-        <MyWork />
+        <AboutMe />
+      </div>
+      <div>
+        <FutureVentures />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>    
   );
