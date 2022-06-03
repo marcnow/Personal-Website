@@ -2,7 +2,6 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FooterSocialMedia from "./FooterSocialMedia";
 import socialMediaItems from "../../static/socialMedia";
@@ -33,17 +32,20 @@ export default function Footer() {
                         )}
                     </Stack>
                 </div>
-                <Stack className="footer-stack" p={3}  direction="row" alignItems="center" justifyContent="space-evenly" divider={<Divider orientation="vertical" flexItem />}>
+                <Stack className="footer-stack" p={3} spacing={14}  direction="row" alignItems="center" justifyContent="center" >
                     <ThemeProvider theme={theme}>
                         <Button color="neutral">
                             <Link to="/">Marc Nowakowski</Link>
                         </Button>
+                        <p className="divider">|</p>
                         <Button color="neutral">
                             <Link to="/software">Software</Link>
                         </Button>
+                        <p className="divider">|</p>
                         <Button color="neutral">
                             <Link to="/blog">Blog</Link>
                         </Button>
+                        <p className="divider">|</p>
                         <Button color="neutral">
                             <Link to="/contact">Contact</Link>
                         </Button>

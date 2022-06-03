@@ -1,11 +1,16 @@
 import React from "react";
+import Footer from "../footer/Footer";
 import NavBar from "../NavBar";
 
 export default function Blog() {
     return (
-        <div className="home-div">
+      <div>
+        <div className="placeholder-div">
           <NavBar/>
-          
         </div>
+        <div>
+          <Footer/>
+        </div>
+      </div>
     );
 }

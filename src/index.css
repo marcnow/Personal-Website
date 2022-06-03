@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-div.home-div {
+div.placeholder-div {
     background-image: url(static/images/cubes.png);
     background-color: #E3FDFD;
     height: 100vh;
     background-position: center;
+}
+
+div.home-div {
+    /*background-image: url(static/images/000.png);*/
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 div.landing-div {
@@ -28,4 +37,8 @@ div.future-ventures {
 
 .footer-stack {
     background-color: #191919;
+}
+
+p.divider {
+    color: #3d3d3d;
 }

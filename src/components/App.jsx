@@ -10,7 +10,7 @@ import ReadMoreButton from "./landingpage/ReadMoreButton"
 export default function App() {
   return (
     <div>
-      <div className="home-div">
+      <div className="placeholder-div">
         <NavBar/>
         <LandingDiv />
         <SocialHomeGroup />
