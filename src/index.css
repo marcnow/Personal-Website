@@ -4,7 +4,7 @@
 
 div.placeholder-div {
     background-image: url(static/images/cubes.png);
-    background-color: #E3FDFD;
+    background-color: #282828;
     height: 100vh;
     background-position: center;
 }
@@ -18,10 +18,6 @@ div.home-div {
 
 }
 
-div.landing-div {
-    color: #71C9CE;
-    
-}
 
 div.my-work {
     background-color: #191919;
