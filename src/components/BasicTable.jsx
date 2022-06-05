@@ -9,26 +9,28 @@ import Paper from '@mui/material/Paper';
 
 
 export default function BasicTable(props) {
-    var arr = props.repositories;
+    
+    const formatDate = (created_at) => {
+        var createdAt = new Date(created_at)
+        console.log(createdAt.getDate())
+        return (`${createdAt.getFullYear()}-${createdAt.getMonth() + 1}-${createdAt.getDate()}`)
+    }
 
-    
-    
-    
     return (
     <div>
         <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 500}} aria-label="simple table"> 
+            <Table sx={{ minWidth: 500 }} aria-label="simple table"> 
                 <TableHead>
                     <TableRow>
-                        <TableCell>Name</TableCell>
-                        <TableCell align="right">Description</TableCell>
-                        <TableCell align="right">Language</TableCell>
-                        <TableCell align="right">Created At</TableCell>
-                        <TableCell align="right">Size</TableCell>
+                        <TableCell align="center">Name</TableCell>
+                        <TableCell align="center">Description</TableCell>
+                        <TableCell align="center">Language</TableCell>
+                        <TableCell align="center">Created At</TableCell>
+                        <TableCell align="center">Size (kb)</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {arr.map((row, index) => (
+                    {props.data.map((row, index) => (
                         <TableRow 
                             key={index}
                             sx={{ '&:last-child td, &last-child th': {border: 0} }}
@@ -36,10 +38,10 @@ export default function BasicTable(props) {
                             <TableCell component="th" scope="row">
                                 {row.name}
                             </TableCell>
-                            <TableCell align="right">{row.description}</TableCell>
-                            <TableCell align="right">{row.language}</TableCell>
-                            <TableCell align="right">{row.createdAt}</TableCell>
-                            <TableCell align="right">{row.size}</TableCell>
+                            <TableCell align="left">{row.description}</TableCell>
+                            <TableCell align="left">{row.language}</TableCell>
+                            <TableCell align="left">{formatDate(row.created_at)}</TableCell>
+                            <TableCell align="left">{row.size}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const padding = 8;
-const paddingSides = 30;
+const paddingSides = 35;
 
 const theme = createTheme({
   palette: {
