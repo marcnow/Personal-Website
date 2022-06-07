@@ -4,7 +4,7 @@ import { Element } from "react-scroll"
 
 export default function MyWork() {
     return (
-        <div className="my-work w-full p-10">
+        <div className="my-work w-full p-10 pt-16">
             <Element name="about-me">
             <div className="pt-16 pb-16 w-full ml-auto mr-auto pr-4 pl-4 max-w-6xl">
                 <h3 className="tracking-[.4em] text-3xl pb-16 text-white">ABOUT ME</h3>

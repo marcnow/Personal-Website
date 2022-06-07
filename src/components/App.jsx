@@ -6,25 +6,27 @@ import AboutMe from "./me/AboutMe";
 import FutureVentures from "./me/FutureVentures"
 import Footer from "./footer/Footer"
 import ReadMoreButton from "./landingpage/ReadMoreButton"
+import Wave from "./Wave"
 
 export default function App() {
   return (
-    <div>
-      <div className="placeholder-div">
+    <div >
+      <header className="relative">
+        <div className="navbar min-w-[48px] min-h-[48px]"></div>
         <NavBar/>
-        <LandingDiv />
-        <SocialHomeGroup />
-        <ReadMoreButton />
-      </div>
-      <div>
-        <AboutMe />
-      </div>
-      <div>
-        <FutureVentures />
-      </div>
-      <div>
+        <div className="placeholder-div">
+          <LandingDiv />
+        </div>
+        <Wave/>
+      </header>
+      <main>
+        <div>
+          <AboutMe />
+        </div>
+      </main>
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>    
   );
 }

@@ -17,8 +17,7 @@ const theme = createTheme({
 
 export default function Footer() {
     return (
-        <div>
-            <footer className="footer">
+        <div className="footer">
                 <div className="pt-28 pb-28 max-w-6xl ml-auto mr-auto">
                     <p className="text-white text-center pb-5 mb-2 tracking-widest text-lg font-[499]">STAY CONNECTED</p>
                     <Stack direction="row" alignItems="center" justifyContent="center" spacing={1.5}>
@@ -51,7 +50,6 @@ export default function Footer() {
                         </Button>
                     </ThemeProvider>
                 </Stack>
-            </footer>
         </div>
     );
 }
