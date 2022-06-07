@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 div.placeholder-div {
-    background-image: url(static/images/cubes.png);
-    background-color: #282828;
-    height: 100vh;
-    background-position: center;
+    background-color: hsl(217deg 100% 75%);
+    height: 500px;
 }
 
 div.home-div {
@@ -18,8 +17,12 @@ div.home-div {
 
 }
 
+h1 {
+    font-family: 'Noe Display','Georgia','Times','serif';
+}
+
 div.my-work {
-    background-color: #191919;
+    background-color: #0e141b;
 }
 
 div.future-ventures {
@@ -36,4 +39,12 @@ div.future-ventures {
 
 p.divider {
     color: #3d3d3d;
+}
+
+path.wave {
+    fill: #0e141b;
+}
+
+div.navbar {
+    background-color: hsl(217deg 100% 75%);
 }
