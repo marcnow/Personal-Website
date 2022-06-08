@@ -1,16 +1,24 @@
-import React from "react";
-import NavBar from "../NavBar";
-import Footer from "../footer/Footer"
+import React from 'react';
+import NavBar from '../NavBar';
+import Footer from '../footer/Footer';
 
 export default function Contact() {
-    return (
-      <div>
+  return (
+    <div>
+      <header>
+        <NavBar />
         <div className="placeholder-div">
-          <NavBar/>
+          <p>Lorem ipsum</p>
         </div>
+      </header>
+      <main>
         <div>
-          <Footer/>
+          <p>Lorem ipsum..</p>
         </div>
-      </div>
-    );
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
 }
