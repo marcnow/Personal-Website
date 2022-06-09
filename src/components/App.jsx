@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div>
       <header className="relative">
-        <div className="navbar min-w-[48px] min-h-[48px" />
+        <div className="navbar min-w-[48px] min-h-[48px]" />
         <NavBar />
         <div className="placeholder-div">
           <LandingDiv />
