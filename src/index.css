@@ -45,6 +45,10 @@ p.divider {
     color: #3d3d3d;
 }
 
+hr.divider {
+    border: 1px solid #3d3d3d;
+}
+
 path.wave {
     fill: #0e141b;
 }

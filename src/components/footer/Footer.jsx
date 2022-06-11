@@ -18,7 +18,8 @@ const theme = createTheme({
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="pt-28 pb-28 max-w-6xl ml-auto mr-auto">
+      <hr className="divider" />
+      <div className="pt-16 pb-20 max-w-6xl ml-auto mr-auto">
         <p className="text-white text-center pb-5 mb-2 tracking-widest text-lg font-[499]">STAY CONNECTED</p>
         <Stack direction="row" alignItems="center" justifyContent="center" spacing={1.5}>
           {socialMediaItems.map((item) => (
@@ -31,6 +32,7 @@ export default function Footer() {
           ))}
         </Stack>
       </div>
+      <hr className="divider" />
       <Stack className="footer-stack" p={3} spacing={14} direction="row" alignItems="center" justifyContent="center">
         <ThemeProvider theme={theme}>
           <Button color="neutral">
