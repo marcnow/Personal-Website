@@ -17,12 +17,35 @@ div.home-div {
 
 }
 
+div.primaryColor {
+    background-color: #171E27;
+}
+
 .colorRed {
     color: #ff5277;
 }
 
+.name:hover {
+    color: #ff5277;
+}
+
+.listItem::after {
+    transform: none;
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #ff5277;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: -1px;
+    transform-origin: 0 50%;
+    transition: transform .3s cubic-bezier(.86,0,.07,1);
+}
+
 h1 {
     font-family: 'Noe Display','Georgia','Times','serif';
+    color: white;
 }
 
 div.my-work {

@@ -21,19 +21,16 @@ export default function Software() {
     <div>
       <header>
         <NavBar />
-        <div className="placeholder-div">
-          <div className="futureVentures w-full p-5">
-            <div className="pt-12 pb-12 w-full ml-auto mr-auto pr-2 pl-2 max-w-[84rem] bg-white">
-              <div className="p-8">
-                <h3 className="tracking-[.4em] text-3xl pb-16">SOFTWARE REPOSITORY</h3>
-                <BasicTable data={githubData} />
-              </div>
-            </div>
+        <div className="primaryColor">
+          <div className="pt-12 pb-12 ml-auto mr-auto pr-2 pl-2 w-[70%] max-w-[84rem] text-center">
+            <h1 className="text-6xl mb-8 mt-2">Software</h1>
           </div>
         </div>
       </header>
       <main>
-        <div />
+        <div className="p-8">
+          <BasicTable data={githubData} />
+        </div>
       </main>
       <footer>
         <Footer />
