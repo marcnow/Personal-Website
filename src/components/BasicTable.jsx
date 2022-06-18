@@ -1,13 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 
 export default function BasicTable(props) {
   const formatMonth = (month) => {
@@ -47,36 +40,31 @@ export default function BasicTable(props) {
   };
 
   return (
-    <div>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 500 }} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell align="center">Name</TableCell>
-              <TableCell align="center">Description</TableCell>
-              <TableCell align="center">Language</TableCell>
-              <TableCell align="center">Created At</TableCell>
-              <TableCell align="center">Size (kb)</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {props.data.map((row) => (
-              <TableRow
-                key={row.id}
-                sx={{ '&:last-child td, &last-child th': { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell align="left">{row.description}</TableCell>
-                <TableCell align="left">{row.language}</TableCell>
-                <TableCell align="left">{formatDate(row.created_at)}</TableCell>
-                <TableCell align="left">{row.size}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+    <div className="">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Created At</th>
+            <th>Size (kb)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.data.map((row) => (
+            <tr>
+              <td>
+                {row.name}
+              </td>
+              <td>{row.description}</td>
+              <td>{row.language}</td>
+              <td>{formatDate(row.created_at)}</td>
+              <td>{row.size}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

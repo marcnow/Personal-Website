@@ -28,7 +28,7 @@ export default function Software() {
         </div>
       </header>
       <main>
-        <div className="p-8">
+        <div className="p-8 primaryColor text-white pb-[17.5rem]">
           <BasicTable data={githubData} />
         </div>
       </main>

@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 
+table {
+    border-collapse: collapse;
+    max-width: 1500px;
+  }
+  
+  td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    padding-bottom: 40px;
+  }
+
+  th {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
 div.placeholder-div {
     background-color: #171E27;
     height: 500px;
@@ -19,6 +37,10 @@ div.home-div {
 
 div.primaryColor {
     background-color: #171E27;
+}
+
+div.secondaryColor {
+    background-color: #0e141b;
 }
 
 .colorRed {
