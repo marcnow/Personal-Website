@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import Software from './components/routes/Software';
 import Blog from './components/routes/Blog';
 import Contact from './components/routes/Contact';
+import TheUltimateChickenNuggetSauceRanking from './components/routes/TheUltimateChickenNuggetSauceRanking';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Route path="/software" element={<Software />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/blog/the-ultimate-chicken-nugget-sauce-ranking" element={<TheUltimateChickenNuggetSauceRanking />} />
     </Routes>
   </BrowserRouter>,
 );

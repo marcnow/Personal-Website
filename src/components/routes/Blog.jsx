@@ -1,10 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../footer/Footer';
 import NavBar from '../NavBar';
 import blogList from '../../static/blogList,';
 import BlogArticle from './BlogArticle';
 
 export default function Blog() {
+  function createLink(entry) {
+    return (
+      <Link to={`/blog/${entry.title.replaceAll(' ', '-').toLowerCase()}`}>
+        <BlogArticle
+          key="{entry.key}"
+          link={entry.title.replaceAll(' ', '-').toLowerCase()}
+          title={entry.title}
+          description={entry.description}
+        />
+      </Link>
+    );
+  }
+
   return (
     <div>
       <header>
@@ -17,13 +31,7 @@ export default function Blog() {
       </header>
       <main>
         <div className="p-8 primaryColor text-white grid gap-8 grid-cols-2">
-          {blogList.map((entry) => (
-            <BlogArticle
-              key={entry.key}
-              title={entry.title}
-              description={entry.description}
-            />
-          ))}
+          {blogList.map((entry) => createLink(entry))}
         </div>
       </main>
       <footer>

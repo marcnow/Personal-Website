@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <div className="navbar sticky top-0">
       <div className="navbar min-w-[48px] min-h-[48px]" />
-      <nav className="flex items-center w-[90%] ml-auto mr-auto justify-between">
+      <nav className="flex items-center w-full ml-auto mr-auto max-w-[1050px] justify-between">
         <div>
           <a className="text-white items-center flex" href="/">
             <img className="block w-12 h-12 align-middle rounded-[50%] mr-2 border-0" alt="Marc Nowakowski" src={profile} />
