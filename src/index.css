@@ -70,6 +70,17 @@ h1 {
     color: white;
 }
 
+li.ranking::before {
+    content: counters(counts,".") ". ";
+    color: #ff5277;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+li.ranking {
+    counter-increment: counts;
+}
+
 div.my-work {
     background-color: #0e141b;
 }
@@ -100,4 +111,30 @@ path.wave {
 
 div.navbar {
     background-color: #171E27;
+}
+
+div.blogGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(600px, 600px));
+}
+
+p.paragraph {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+blockquote.quote {
+    color: #9c9c9c;
+}
+
+.tableOfContents {
+    color: #d9d9d9;
+}
+
+aside.tableOfContents {
+    flex: 0 100000 250px;
 }

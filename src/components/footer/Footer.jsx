@@ -47,9 +47,6 @@ export default function Footer() {
             <Link to="/blog">Blog</Link>
           </Button>
           <p className="divider">|</p>
-          <Button color="neutral">
-            <Link to="/contact">Contact</Link>
-          </Button>
         </ThemeProvider>
       </Stack>
     </div>

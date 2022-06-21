@@ -40,7 +40,7 @@ export default function BasicTable(props) {
   };
 
   return (
-    <div className="">
+    <div className="w-full max-w-[1100px] ml-auto mr-auto">
       <table>
         <thead>
           <tr>

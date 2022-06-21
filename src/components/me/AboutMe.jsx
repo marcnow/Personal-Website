@@ -7,8 +7,8 @@ import cpu from '../../static/images/icons/cpu.png';
 
 export default function MyWork() {
   return (
-    <div className="my-work w-full p-10 pt-16">
-      <div className="pt-8 pb-8 ml-auto mr-auto pr-4 pl-4 w-[70%]  ">
+    <div className="my-work p-10 pt-16">
+      <div className="pt-8 pb-8 ml-auto mr-auto pr-4 pl-4  w-full max-w-[1100px] ">
         <h1 className="text-6xl mb-8 text-white text-left">About me</h1>
         <p className="text-white pb-16 tracking-wide text-xl">
           I was never the best at School or University, always been just a super curious guy.

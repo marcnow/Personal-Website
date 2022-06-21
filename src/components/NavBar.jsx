@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <div className="navbar sticky top-0">
       <div className="navbar min-w-[48px] min-h-[48px]" />
-      <nav className="flex items-center w-full ml-auto mr-auto max-w-[1050px] justify-between">
+      <nav className="flex items-center w-full ml-auto mr-auto max-w-[1100px] justify-between">
         <div>
           <a className="text-white items-center flex" href="/">
             <img className="block w-12 h-12 align-middle rounded-[50%] mr-2 border-0" alt="Marc Nowakowski" src={profile} />
@@ -31,12 +31,6 @@ export default function NavBar() {
               <Link className="listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/blog">
                 <span className="block mr-2 font-bold">03</span>
                 blog
-              </Link>
-            </li>
-            <li className="relative">
-              <Link className="listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/contact">
-                <span className="block mr-2 font-bold">04</span>
-                contact
               </Link>
             </li>
           </ul>

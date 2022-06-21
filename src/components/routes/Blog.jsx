@@ -1,21 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Footer from '../footer/Footer';
 import NavBar from '../NavBar';
-import blogList from '../../static/blogList,';
+import blogList from '../../static/blogList';
 import BlogArticle from './BlogArticle';
 
 export default function Blog() {
   function createLink(entry) {
     return (
-      <Link to={`/blog/${entry.title.replaceAll(' ', '-').toLowerCase()}`}>
+      <a href={`/blog/${entry.title.replaceAll(' ', '-').toLowerCase()}`}>
         <BlogArticle
-          key="{entry.key}"
+          key={entry.key}
           link={entry.title.replaceAll(' ', '-').toLowerCase()}
           title={entry.title}
           description={entry.description}
         />
-      </Link>
+      </a>
     );
   }
 
@@ -30,9 +29,10 @@ export default function Blog() {
         </div>
       </header>
       <main>
-        <div className="p-8 primaryColor text-white grid gap-8 grid-cols-2">
+        <div className="p-8 primaryColor text-white blogGrid content-center justify-center">
           {blogList.map((entry) => createLink(entry))}
         </div>
+        <div className="primaryColor h-screen" />
       </main>
       <footer>
         <Footer />
