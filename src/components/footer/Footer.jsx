@@ -1,10 +1,13 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
 import Stack from '@mui/material/Stack';
+import Avatar from '@mui/material/Avatar';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FooterSocialMedia from './FooterSocialMedia';
 import socialMediaItems from '../../static/socialMedia';
+import email from '../../static/images/icons/email_transparent.png';
 
 const theme = createTheme({
   palette: {
@@ -30,6 +33,9 @@ export default function Footer() {
               alt={item.alt}
             />
           ))}
+          <div className="p-1 w-9 h-9">
+            <a href="mailto:marc.nowakowski@hotmail.com"><Avatar alt="Email" src={email} /></a>
+          </div>
         </Stack>
       </div>
       <hr className="divider" />
