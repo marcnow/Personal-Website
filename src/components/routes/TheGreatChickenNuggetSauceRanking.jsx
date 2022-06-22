@@ -21,7 +21,7 @@ export default function theGreatChickenNuggetSauceRanking() {
         </div>
       </header>
       <main>
-        <div className="secondaryColor pt-12 pb-12 h-screen">
+        <div className="secondaryColor pt-12 pb-12">
           <div className="secondaryColor relative w-full ml-auto mr-auto pt-12 pr-8 pl-8 max-w-[1100px] flex flex-row-reverse justify-center items-start">
             <aside className="tableOfContents min-w-[250px] sticky top-36 max-h-[calc(100vh - 144px)] pb-4 ml-20 mt-1">
               <nav>
