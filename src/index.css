@@ -119,7 +119,7 @@ div.blogGrid {
     grid-template-columns: repeat(2, minmax(600px, 600px));
 }
 
-p.paragraph {
+.paragraph {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     line-height: 2rem;
