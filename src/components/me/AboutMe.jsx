@@ -11,13 +11,8 @@ export default function MyWork() {
       <div className="pt-8 pb-8 ml-auto mr-auto pr-4 pl-4  w-full max-w-[1100px] ">
         <h1 className="text-6xl mb-8 text-white text-left">About me</h1>
         <p className="paragraph text-white pb-16 tracking-wide text-xl">
-          I was never the best at School or University, always been just a super curious guy.
-          I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, so you can see this site.
-          BTW, if you are interested in which Chicken Nuggets Sauce is the best or find out why (... is a good/bad thing),
-          feel free to check out my
-          {' '}
-          <a href="/blog" className="hover:underline">Blog</a>
-          .
+          I&apos;ve never been the best at School or University, always been just a curious guy.
+          I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, as you can this website.
         </p>
 
         <div className=" justify-center self-center">

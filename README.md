@@ -20,4 +20,5 @@ https://marcnowakowski.io
 -refactor the code
 -maybe implement comment function on blogs
 -integrate backend services
--what more?
+-like/dislike functionality in blog
+-more? 
