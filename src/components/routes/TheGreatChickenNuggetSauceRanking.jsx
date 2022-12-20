@@ -56,7 +56,7 @@ export default function theGreatChickenNuggetSauceRanking() {
                   <h3 className="mb-8 mt-14 text-2xl font-bold text-white">Ranking from 20 Dec 2022</h3>
                   <p className="paragraph">Long time no see. We got new sauces!</p>
                   <ol className="text-lg mb-8 list-none pl-4">
-                    <li className="ranking items-baseline flex mb-4 text-white ">Buttermilk Ranch Dip (easy the best of all)</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Buttermilk Ranch Dip (still number one)</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Spicy Sauce</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Barbecue Sauce</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Curry Sauce</li>
@@ -70,7 +70,7 @@ export default function theGreatChickenNuggetSauceRanking() {
                 <Element name="ranking-21-jun-2022">
                   <h3 className="mb-8 mt-14 text-2xl font-bold text-white">Ranking from 21 Jun 2022</h3>
                   <ol className="text-lg mb-8 list-none pl-4">
-                    <li className="ranking items-baseline flex mb-4 text-white ">Buttermilk Ranch Dip (still the best)</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Buttermilk Ranch Dip (easy the best of all)</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Barbecue Sauce</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Curry Sauce</li>
                     <li className="ranking items-baseline flex mb-4 text-white ">Chili Sauce</li>
