@@ -3,28 +3,17 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FooterSocialMedia from './FooterSocialMedia';
 import socialMediaItems from '../../static/socialMedia';
 import email from '../../static/images/icons/email_transparent.png';
-
-const theme = createTheme({
-  palette: {
-    neutral: {
-      main: '#fff',
-      contrastText: '#fff',
-    },
-  },
-});
 
 export default function Footer() {
   return (
     <div className="footer">
       <hr className="divider" />
-      <div className="pt-16 pb-20 max-w-6xl ml-auto mr-auto">
-        <p className="text-white text-center pb-5 mb-2 tracking-widest text-lg font-[499]">STAY CONNECTED</p>
-        <Stack direction="row" alignItems="center" justifyContent="center" spacing={1.5}>
+      <div className="pt-16 pb-20 max-w-6xl ml-auto mr-auto text-center">
+        <h3 className="colorRed text-xl font-bold tracking-wide ml-2 uppercase pb-4 leading-7">Stay Connected</h3>
+        <Stack direction="row" alignItems="center" justifyContent="center" spacing={2.5}>
           {socialMediaItems.map((item) => (
             <FooterSocialMedia
               key={item.key}
@@ -34,26 +23,33 @@ export default function Footer() {
             />
           ))}
           <div className="p-1 w-9 h-9">
-            <a href="mailto:marc.nowakowski@hotmail.com"><Avatar alt="Email" src={email} /></a>
+            <a href="mailto:marc@marcnowakowski.io"><Avatar alt="Email" src={email} /></a>
           </div>
         </Stack>
       </div>
       <hr className="divider" />
-      <Stack className="footer-stack" p={3} spacing={14} direction="row" alignItems="center" justifyContent="center">
-        <ThemeProvider theme={theme}>
-          <Button color="neutral">
-            <Link to="/">Marc Nowakowski</Link>
-          </Button>
-          <p className="divider">|</p>
-          <Button color="neutral">
-            <Link to="/software">Software</Link>
-          </Button>
-          <p className="divider">|</p>
-          <Button color="neutral">
-            <Link to="/blog">Blog</Link>
-          </Button>
-          <p className="divider">|</p>
-        </ThemeProvider>
+      <Stack className="footer-stack" p={2} direction="row" alignItems="center" justifyContent="center">
+        <div>
+          <ul className="flex p-0 m-0">
+            <li className="relative">
+              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/">
+                home
+              </Link>
+            </li>
+            <p className="divider p-3.5 ml-10 mr-10">|</p>
+            <li className="relative">
+              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/software">
+                software
+              </Link>
+            </li>
+            <p className="divider p-3.5 ml-10 mr-10">|</p>
+            <li className="relative">
+              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/blog">
+                blog
+              </Link>
+            </li>
+          </ul>
+        </div>
       </Stack>
     </div>
   );

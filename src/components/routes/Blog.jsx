@@ -24,7 +24,7 @@ export default function Blog() {
         <NavBar />
         <div className="primaryColor">
           <div className="pt-12 pb-12 w-full ml-auto mr-auto pr-2 pl-2 max-w-[84rem] text-center">
-            <h1 className="text-6xl mb-8 mt-2 text-white">Blog</h1>
+            <h1 className="robotoMono text-6xl mb-8 mt-2 text-white">Blog</h1>
           </div>
         </div>
       </header>

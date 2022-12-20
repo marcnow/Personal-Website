@@ -51,19 +51,14 @@ div.secondaryColor {
     color: #ff5277;
 }
 
-.listItem::after {
-    transform: none;
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #ff5277;
-    position: absolute;
-    left: 1.25rem;
-    right: 1.25rem;
-    bottom: -1px;
-    transform-origin: 0 50%;
-    transition: transform .3s cubic-bezier(.86,0,.07,1);
-}
+
+
+.avatar {
+    vertical-align: middle;
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+  }
 
 h1 {
     font-family: 'Noe Display','Georgia','Times','serif';
@@ -137,4 +132,31 @@ blockquote.quote {
 
 aside.tableOfContents {
     flex: 0 100000 250px;
+}
+
+.robotoMono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.listItem {
+    position: relative;
+  }
+  
+.listItem::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff5277;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }

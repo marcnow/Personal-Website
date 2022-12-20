@@ -16,19 +16,19 @@ export default function NavBar() {
         <div>
           <ul className="flex p-0 m-0">
             <li className="relative">
-              <Link className="listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/">
+              <Link className="robotoMono listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/">
                 <span className="block mr-2 font-bold">01</span>
                 home
               </Link>
             </li>
             <li className="relative">
-              <Link className="listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/software">
+              <Link className="robotoMono listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/software">
                 <span className="block mr-2 font-bold">02</span>
                 software
               </Link>
             </li>
             <li className="relative">
-              <Link className="listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/blog">
+              <Link className="robotoMono listItem text-white flex items-center relative p-4 whitespace-nowrap" to="/blog">
                 <span className="block mr-2 font-bold">03</span>
                 blog
               </Link>
