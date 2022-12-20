@@ -35,6 +35,9 @@ export default function theGreatChickenNuggetSauceRanking() {
                 <Link to="ranking-21-jun-2022" smooth={true}>
                   <a className="name pl-3 mt-3 leading-6 block" href="/">Ranking from 21 Jun 2022</a>
                 </Link>
+                <Link to="ranking-21-jun-2022" smooth={true}>
+                  <a className="name pl-3 mt-3 leading-6 block" href="/">Ranking from 20 Dec 2022</a>
+                </Link>
               </nav>
             </aside>
             <article>
@@ -49,6 +52,21 @@ export default function theGreatChickenNuggetSauceRanking() {
               <Element name="ranking">
                 <h2 className="mb-8 mt-14 text-3xl font-bold colorRed">Ranking</h2>
                 <p className="paragraph">So, let&apos;s begin with the ranking. I will start with the best and then make my way to the worst sauce. Sometimes i summarize multiple sauces to point when they are equally bad/good.</p>
+                <Element name="ranking-21-jun-2022">
+                  <h3 className="mb-8 mt-14 text-2xl font-bold text-white">Ranking from 20 Dec 2022</h3>
+                  <p className="paragraph">Long time no see. We got new sauces!</p>
+                  <ol className="text-lg mb-8 list-none pl-4">
+                    <li className="ranking items-baseline flex mb-4 text-white ">Buttermilk Ranch Dip (easy the best of all)</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Spicy Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Barbecue Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Curry Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Chili Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Cocktail Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Sweet Sour Sauce</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Sour Cream Sauce, Ketchup, Mayonnaise (there are better ones)</li>
+                    <li className="ranking items-baseline flex mb-4 text-white ">Mustard Sauce (easy the worst)</li>
+                  </ol>
+                </Element>
                 <Element name="ranking-21-jun-2022">
                   <h3 className="mb-8 mt-14 text-2xl font-bold text-white">Ranking from 21 Jun 2022</h3>
                   <ol className="text-lg mb-8 list-none pl-4">
