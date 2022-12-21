@@ -12,7 +12,7 @@ export default function MyWork() {
         <h1 className="robotoMono text-6xl mb-8 text-white text-left">About me</h1>
         <p className="robotoMono paragraph text-white tracking-wide text-xl">
           I&apos;ve never been the best at School or University, always been just a curious guy.
-          I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, as you can this website.
+          I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, as you can see this website.
         </p>
         <p className="robotoMono paragraph text-white pb-16 tracking-wide text-xl">
           I&apos;m also teaching myself about Software Developing and sometimes I post random stuff on my
