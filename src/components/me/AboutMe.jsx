@@ -10,9 +10,15 @@ export default function MyWork() {
     <div className="my-work p-10 pt-16">
       <div className="pt-8 pb-8 ml-auto mr-auto pr-4 pl-4  w-full max-w-[1100px] ">
         <h1 className="robotoMono text-6xl mb-8 text-white text-left">About me</h1>
-        <p className="robotoMono paragraph text-white pb-16 tracking-wide text-xl">
+        <p className="robotoMono paragraph text-white tracking-wide text-xl">
           I&apos;ve never been the best at School or University, always been just a curious guy.
           I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, as you can this website.
+        </p>
+        <p className="robotoMono paragraph text-white pb-16 tracking-wide text-xl">
+          I&apos;m also teaching myself about Software Developing and sometimes I post random stuff on my
+          {' '}
+          <a href="/blog" className="hover:underline">Blog</a>
+          .
         </p>
         <div className=" justify-center self-center">
           <div className="ml-auto mr-auto mt-14 mb-20 text-left">
