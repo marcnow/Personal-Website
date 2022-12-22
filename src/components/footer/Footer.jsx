@@ -9,10 +9,10 @@ import email from '../../static/images/icons/email_transparent.png';
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <hr className="divider" />
-      <div className="pt-16 pb-20 max-w-6xl ml-auto mr-auto text-center">
-        <h3 className="colorRed text-xl font-bold tracking-wide ml-2 uppercase pb-4 leading-7">Stay Connected</h3>
+    <div className="secondaryColor">
+      <hr />
+      <div className="pt-16 pb-20 text-center">
+        <h2 className="ml-2 pb-2">Stay Connected</h2>
         <Stack direction="row" alignItems="center" justifyContent="center" spacing={2.5}>
           {socialMediaItems.map((item) => (
             <FooterSocialMedia
@@ -27,26 +27,20 @@ export default function Footer() {
           </div>
         </Stack>
       </div>
-      <hr className="divider" />
-      <Stack className="footer-stack" p={2} direction="row" alignItems="center" justifyContent="center">
+      <hr />
+      <Stack pt={2} direction="row" alignItems="center" justifyContent="center">
         <div>
-          <ul className="flex p-0 m-0">
-            <li className="relative">
-              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/">
-                home
-              </Link>
+          <ul className="flex robotoMono">
+            <li>
+              <Link className="flex pt-4" to="/">home</Link>
             </li>
-            <p className="divider p-3.5 ml-10 mr-10">|</p>
-            <li className="relative">
-              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/software">
-                software
-              </Link>
+            <p className="divider">|</p>
+            <li>
+              <Link className="flex pt-4" to="/software">software</Link>
             </li>
-            <p className="divider p-3.5 ml-10 mr-10">|</p>
-            <li className="relative">
-              <Link className="robotoMono text-white flex items-center relative p-4 whitespace-nowrap" to="/blog">
-                blog
-              </Link>
+            <p className="divider">|</p>
+            <li>
+              <Link className="flex pt-4" to="/blog">blog</Link>
             </li>
           </ul>
         </div>
