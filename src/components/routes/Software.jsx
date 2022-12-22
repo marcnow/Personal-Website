@@ -18,12 +18,12 @@ export default function Software() {
   }, []);
 
   return (
-    <div>
+    <div className="pt-12 pb-12 ml-auto mr-auto pr-2 pl-2 w-full max-w-[1100px] text-center text-white">
       <header>
         <NavBar />
         <div className="primaryColor">
-          <div className="pt-12 pb-12 ml-auto mr-auto pr-2 pl-2 w-full max-w-[1100px] text-center">
-            <h1 className="robotoMono text-6xl mb-8 mt-2">Software</h1>
+          <div>
+            <h1 className="robotoMono mb-8 mt-2">Software</h1>
           </div>
         </div>
       </header>

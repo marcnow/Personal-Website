@@ -7,16 +7,16 @@ import Wave from './Wave';
 
 export default function App() {
   return (
-    <div>
-      <header className="relative">
+    <div className="ml-auto mr-auto w-full max-w-[1100px] text-white">
+      <header>
         <NavBar />
-        <div className="placeholder-div">
-          <LandingDiv />
-        </div>
-        <Wave />
       </header>
       <main>
-        <div>
+        <div className="primaryColor">
+          <LandingDiv />
+          <Wave />
+        </div>
+        <div className="secondaryColor">
           <AboutMe />
         </div>
       </main>

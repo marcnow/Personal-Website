@@ -42,7 +42,7 @@ export default function theGreatChickenNuggetSauceRanking() {
             </aside>
             <article>
               <Element name="introduction">
-                <blockquote className="quote text-xl mt-12 mb-6 font-medium italic">
+                <blockquote className="quote text-xl mt-auto mb-6 font-medium italic">
                   &quot;Which Chicken Nugget Sauce should I pick?&quot;
                 </blockquote>
                 <p className="paragraph">Tough question, isn&apos;t it? Fun Fact: This question set the basic idea of this whole project. It all started as a joke or insider in my friend group and now it became my own website.</p>
