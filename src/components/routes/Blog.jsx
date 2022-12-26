@@ -20,20 +20,23 @@ export default function Blog() {
 
   return (
     <div>
-      <header>
-        <NavBar />
-        <div className="primaryColor">
-          <div className="pt-12 pb-12 w-full ml-auto mr-auto pr-2 pl-2 max-w-[84rem] text-center">
-            <h1 className="robotoMono text-6xl mb-8 mt-2 text-white">Blog</h1>
+      <div className="primaryColor">
+        <header className="header-container">
+          <NavBar />
+        </header>
+        <main className="main-container">
+          {/* we calculate the height based on the
+          screen size minus the padding top (5rem) and the footer height */}
+          <div className="primaryColor pt-20 h-[calc(100vh-5rem-314px)]">
+            <div>
+              <h1 className="text-center">Blog</h1>
+            </div>
+            <div className="blogGrid">
+              {blogList.map((entry) => createLink(entry))}
+            </div>
           </div>
-        </div>
-      </header>
-      <main>
-        <div className="p-8 primaryColor text-white blogGrid content-center justify-center">
-          {blogList.map((entry) => createLink(entry))}
-        </div>
-        <div className="primaryColor h-screen" />
-      </main>
+        </main>
+      </div>
       <footer>
         <Footer />
       </footer>

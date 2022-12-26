@@ -8,21 +8,27 @@ import Wave from './Wave';
 export default function App() {
   return (
     <div>
-      <header className="relative">
-        <NavBar />
-        <div className="placeholder-div">
-          <LandingDiv />
-        </div>
-        <Wave />
-      </header>
-      <main>
-        <div>
-          <AboutMe />
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <div className="primaryColor">
+        <header className="header-container">
+          <NavBar />
+        </header>
+        <main className="main-container">
+          <div>
+            <LandingDiv />
+          </div>
+        </main>
+      </div>
+      <Wave />
+      <div className="secondaryColor">
+        <main className="main-container">
+          <div className="secondaryColor">
+            <AboutMe />
+          </div>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   );
 }

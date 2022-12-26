@@ -19,19 +19,23 @@ export default function Software() {
 
   return (
     <div>
-      <header>
-        <NavBar />
-        <div className="primaryColor">
-          <div className="pt-12 pb-12 ml-auto mr-auto pr-2 pl-2 w-full max-w-[1100px] text-center">
-            <h1 className="robotoMono text-6xl mb-8 mt-2">Software</h1>
+      <div className="primaryColor">
+        <header className="header-container">
+          <NavBar />
+        </header>
+        <main className="main-container">
+          {/* we calculate the height based on the
+          screen size minus the padding top (5rem) and the footer height */}
+          <div className="primaryColor pt-20 h-[calc(100vh-5rem-314px)]">
+            <div>
+              <h1 className="text-center">Software</h1>
+            </div>
+            <div>
+              <BasicTable data={githubData} />
+            </div>
           </div>
-        </div>
-      </header>
-      <main>
-        <div className="p-8 primaryColor text-white pb-[17.5rem]">
-          <BasicTable data={githubData} />
-        </div>
-      </main>
+        </main>
+      </div>
       <footer>
         <Footer />
       </footer>
