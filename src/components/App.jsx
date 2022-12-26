@@ -7,22 +7,28 @@ import Wave from './Wave';
 
 export default function App() {
   return (
-    <div className="ml-auto mr-auto w-full max-w-[1100px] text-white">
-      <header>
-        <NavBar />
-      </header>
-      <main>
-        <div className="primaryColor">
-          <LandingDiv />
-          <Wave />
-        </div>
-        <div className="secondaryColor">
-          <AboutMe />
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+    <div>
+      <div className="primaryColor">
+        <header className="header-container">
+          <NavBar />
+        </header>
+        <main className="main-container">
+          <div>
+            <LandingDiv />
+          </div>
+        </main>
+      </div>
+      <Wave />
+      <div className="secondaryColor">
+        <main className="main-container">
+          <div className="secondaryColor">
+            <AboutMe />
+          </div>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   );
 }
