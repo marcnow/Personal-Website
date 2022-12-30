@@ -26,7 +26,7 @@ export default function Software() {
         <main className="main-container">
           {/* we calculate the height based on the
           screen size minus the padding top (5rem) and the footer height */}
-          <div className="primaryColor pt-20 h-[calc(100vh-5rem-314px)]">
+          <div className="primaryColor pt-20">
             <div>
               <h1 className="text-center">Software</h1>
             </div>
