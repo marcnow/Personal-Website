@@ -27,14 +27,15 @@ export default function Blog() {
         <main className="main-container">
           {/* we calculate the height based on the
           screen size minus the padding top (5rem) and the footer height */}
-          <div className="primaryColor pt-20 h-[calc(100vh-5rem-314px)]">
+          <div className="primaryColor pt-20">
             <div>
               <h1 className="text-center">Blog</h1>
             </div>
-            <div className="blogGrid">
+            <div className="blogGrid mb:p-4">
               {blogList.map((entry) => createLink(entry))}
             </div>
           </div>
+          <div className="min-h-[calc(100vh-39rem-314px)]" />
         </main>
       </div>
       <footer>

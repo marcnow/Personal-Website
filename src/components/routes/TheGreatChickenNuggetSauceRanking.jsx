@@ -11,7 +11,7 @@ export default function theGreatChickenNuggetSauceRanking() {
       <div className="primaryColor">
         <header className="header-container">
           <NavBar />
-          <div className="primaryColor pt-20">
+          <div className="primaryColor pt-20 mb:p-3">
             <a href="/" className="text-gray-500 text-lg">Home</a>
             <p className="inline-block text-gray-500 ml-2">&gt;</p>
             <a href="/blog" className="text-gray-500 text-lg ml-2">Blog</a>
@@ -40,7 +40,7 @@ export default function theGreatChickenNuggetSauceRanking() {
                   </Link>
                 </nav>
               </aside>
-              <article>
+              <article className="mb:p-3">
                 <Element name="introduction">
                   <blockquote className="quote text-xl mt-auto mb-6 font-medium italic">
                     &quot;Which Chicken Nugget Sauce should I pick?&quot;
@@ -50,10 +50,10 @@ export default function theGreatChickenNuggetSauceRanking() {
                   <p>Also, I want to keep this article up to date, so I try to update it regularly.</p>
                 </Element>
                 <Element name="ranking">
-                  <h2 className="mb-8 mt-14 text-3xl">Ranking</h2>
+                  <h2 className="mb-6 mt-6 text-3xl mb:text-2xl">Ranking</h2>
                   <p>So, let&apos;s begin with the ranking. I will start with the best and then make my way to the worst sauce. Sometimes i summarize multiple sauces to point when they are equally bad/good.</p>
                   <Element name="ranking-21-jun-2022">
-                    <h3 className="mb-8 mt-14 text-2xl font-bold">Ranking from 20 Dec 2022</h3>
+                    <h3 className="mb-8 mt-14 font-bold mb:text-xl">Ranking from 20 Dec 2022</h3>
                     <p>Long time no see. We got new sauces!</p>
                     <ol className="mb-8 pl-4">
                       <li className="ranking mb-4">Buttermilk Ranch Dip (still number one)</li>
@@ -68,7 +68,7 @@ export default function theGreatChickenNuggetSauceRanking() {
                     </ol>
                   </Element>
                   <Element name="ranking-21-jun-2022">
-                    <h3 className="mb-8 mt-14 text-2xl font-bold">Ranking from 21 Jun 2022</h3>
+                    <h3 className="mb-8 mt-14 font-bold mb:text-xl">Ranking from 21 Jun 2022</h3>
                     <ol className="mb-8 pl-4">
                       <li className="ranking mb-4">Buttermilk Ranch Dip (easy the best of all)</li>
                       <li className="ranking mb-4">Barbecue Sauce</li>

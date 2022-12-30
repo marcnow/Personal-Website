@@ -3,7 +3,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      'mb': {'max': '480px'},
+      // => @media (min-width: 640px) { ... }
+    },
   },
   plugins: [],
 }
