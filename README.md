@@ -16,8 +16,6 @@ https://marcnowakowski.io
 4. Access it on localhost:3000
 
 ### Future venture for this project
--develop better smartphone view
--refactor the code
 -maybe implement comment function on blogs
 -integrate backend services
 -like/dislike functionality in blog
