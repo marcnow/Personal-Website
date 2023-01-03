@@ -235,7 +235,7 @@ a:hover::before {
     top:0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     h1 {
         font-size: 32px;
     }
@@ -250,6 +250,10 @@ a:hover::before {
 
     p {
         font-size: 17px;
+    }
+
+    th, td {
+        font-size: 0.9rem;
     }
 
     img.icon {
@@ -288,6 +292,12 @@ a:hover::before {
 
     li.ranking {
         font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    aside.tableOfContents {
+        display: none;
     }
 }
 
