@@ -10,7 +10,7 @@ export default function blogTemplate() {
       <div className="primaryColor">
         <header className="header-container">
           <NavBar />
-          <div className="primaryColor pt-20 mb:p-3">
+          <div className="primaryColor pt-20 mb:p-3 lp:p-3">
             <a href="/" className="text-gray-500 text-lg">Home</a>
             <p className="inline-block text-gray-500 ml-2">&gt;</p>
             <a href="/blog" className="text-gray-500 text-lg ml-2">Blog</a>
@@ -30,7 +30,7 @@ export default function blogTemplate() {
                   </Link>
                 </nav>
               </aside>
-              <article className="mr-auto mb:p-4">
+              <article className="mr-auto mb:p-3 lp:p-3">
                 <Element name="introduction">
                   <blockquote className="quote text-xl mt-auto mb-6 font-medium italic">
                     Nothing to see right now.

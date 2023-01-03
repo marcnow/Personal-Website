@@ -7,7 +7,7 @@ export default function MyWork() {
   return (
     <div>
       <div>
-        <div className="mb:p-3">
+        <div className="mb:p-3 lp:p-3">
           <h1 className="pb-5">About me</h1>
           <p className="robotoMono">
             I&apos;ve never been the best at School or University, always been just a curious guy.
@@ -29,7 +29,7 @@ export default function MyWork() {
           />
         ))}
       </div>
-      <div className="min-h-[calc(100vh-72rem-314px)]" />
+      <div className="min-h-[calc(100vh-45rem-314px)]" />
     </div>
   );
 }
