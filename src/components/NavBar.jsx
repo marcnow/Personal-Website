@@ -17,10 +17,10 @@ export default function NavBar() {
         </div>
         <input className="side-menu" type="checkbox" id="side-menu" />
         <label className="hamb" htmlFor="side-menu"><span className="hamb-line" /></label>
-        <nav className="nav mb:mt-20">
-          <ul className="flex robotoMono items-center mb:block">
+        <nav className="nav nav:mt-20">
+          <ul className="flex robotoMono items-center nav:block">
             <li>
-              <Link className="listItem relative flex pr-4 pt-4 pb-4 mb:pl-4 mb:text-base" to="/">
+              <Link className="listItem relative flex pr-4 pt-4 pb-4 mb:pl-3 lp:pl-3 mb:text-base" to="/">
                 <span>01</span>
                 home
               </Link>
