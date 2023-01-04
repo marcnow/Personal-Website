@@ -29,7 +29,7 @@ export default function MyWork() {
           />
         ))}
       </div>
-      <div className="min-h-[calc(100vh-45rem-314px)]" />
+      <div className="h-24" />
     </div>
   );
 }

@@ -20,19 +20,19 @@ export default function NavBar() {
         <nav className="nav nav:mt-20">
           <ul className="flex robotoMono items-center nav:block">
             <li>
-              <Link className="listItem relative flex pr-4 pt-4 pb-4 mb:pl-3 lp:pl-3 mb:text-base" to="/">
+              <Link className="listItem relative flex pr-3 pt-3 pb-3 mb:pl-3 lp:pl-3 mb:text-base" to="/">
                 <span>01</span>
                 home
               </Link>
             </li>
             <li>
-              <Link className="listItem relative flex p-4  mb:text-base" to="/software">
+              <Link className="listItem relative flex p-3  mb:text-base" to="/software">
                 <span>02</span>
                 software
               </Link>
             </li>
             <li>
-              <Link className="listItem relative flex p-4 mb:text-base" to="/blog">
+              <Link className="listItem relative flex p-3 mb:text-base" to="/blog">
                 <span>03</span>
                 blog
               </Link>
