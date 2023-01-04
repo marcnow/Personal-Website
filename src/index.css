@@ -253,7 +253,7 @@ a:hover::before {
     }
 
     th, td {
-        font-size: 0.9rem;
+        font-size: 0.65rem;
     }
 
     img.icon {
@@ -283,7 +283,7 @@ a:hover::before {
         display: grid;
         grid-template-columns: none;
         gap: 0;
-        grid-template-rows: repeat(2, minmax(475px, 475px));
+        grid-template-rows: repeat(2, minmax(450px, 450px));
     }
 
     aside.tableOfContents {
