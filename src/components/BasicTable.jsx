@@ -65,7 +65,7 @@ export default function BasicTable(props) {
           ))}
         </tbody>
       </table>
-      <div className="h-24" />
+      <div className="min-h-[calc(100vh-51rem-314px)]" />
     </div>
   );
 }
