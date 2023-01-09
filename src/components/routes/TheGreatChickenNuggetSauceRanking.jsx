@@ -4,6 +4,7 @@ import React from 'react';
 import { Link, Element } from 'react-scroll';
 import NavBar from '../NavBar';
 import Footer from '../footer/Footer';
+import UserFeedback from '../UserFeedback';
 
 export default function theGreatChickenNuggetSauceRanking() {
   return (
@@ -11,7 +12,7 @@ export default function theGreatChickenNuggetSauceRanking() {
       <div className="primaryColor">
         <header className="header-container">
           <NavBar />
-          <div className="primaryColor pt-20 mb:p-3 lp:p-3">
+          <div className="primaryColor mb:pl-3 lp:pl-3 pt-14">
             <a href="/" className="text-gray-500 text-lg">Home</a>
             <p className="inline-block text-gray-500 ml-2">&gt;</p>
             <a href="/blog" className="text-gray-500 text-lg ml-2">Blog</a>
@@ -39,6 +40,7 @@ export default function theGreatChickenNuggetSauceRanking() {
                     <a className="name pl-3 mt-3 block" href="/">Ranking from 20 Dec 2022</a>
                   </Link>
                 </nav>
+                <UserFeedback blogName="theGreatChickenNuggetSauceRanking" />
               </aside>
               <article className="mb:p-3 lp:p-3">
                 <Element name="introduction">
@@ -53,30 +55,30 @@ export default function theGreatChickenNuggetSauceRanking() {
                   <h2 className="mb-6 mt-6 text-3xl mb:text-2xl">Ranking</h2>
                   <p>So, let&apos;s begin with the ranking. I will start with the best and then make my way to the worst sauce. Sometimes i summarize multiple sauces to point when they are equally bad/good.</p>
                   <Element name="ranking-21-jun-2022">
-                    <h3 className="mb-8 mt-14 font-bold mb:text-xl">Ranking from 20 Dec 2022</h3>
+                    <h3 className="mb-8 mt-14 font-bold text-3xl mb:text-xl">Ranking from 20 Dec 2022</h3>
                     <p>Long time no see. We got new sauces!</p>
                     <ol className="mb-8 pl-4">
-                      <li className="ranking mb-4">Buttermilk Ranch Dip (still number one)</li>
-                      <li className="ranking mb-4">Spicy Sauce</li>
-                      <li className="ranking mb-4">Barbecue Sauce</li>
-                      <li className="ranking mb-4">Curry Sauce</li>
-                      <li className="ranking mb-4">Chili Sauce</li>
-                      <li className="ranking mb-4">Cocktail Sauce</li>
-                      <li className="ranking mb-4">Sweet Sour Sauce</li>
-                      <li className="ranking mb-4">Sour Cream Sauce, Ketchup, Mayonnaise (there are better ones)</li>
-                      <li className="ranking mb-4">Mustard Sauce (easy the worst)</li>
+                      <li className="ranking">Buttermilk Ranch Dip (still number one)</li>
+                      <li className="ranking">Spicy Sauce</li>
+                      <li className="ranking">Barbecue Sauce</li>
+                      <li className="ranking">Curry Sauce</li>
+                      <li className="ranking">Chili Sauce</li>
+                      <li className="ranking">Cocktail Sauce</li>
+                      <li className="ranking">Sweet Sour Sauce</li>
+                      <li className="ranking">Sour Cream Sauce, Ketchup, Mayonnaise (there are better ones)</li>
+                      <li className="ranking">Mustard Sauce (easy the worst)</li>
                     </ol>
                   </Element>
                   <Element name="ranking-21-jun-2022">
-                    <h3 className="mb-8 mt-14 font-bold mb:text-xl">Ranking from 21 Jun 2022</h3>
+                    <h3 className="mb-8 mt-14 font-bold text-3xl mb:text-xl">Ranking from 21 Jun 2022</h3>
                     <ol className="mb-8 pl-4">
-                      <li className="ranking mb-4">Buttermilk Ranch Dip (easy the best of all)</li>
-                      <li className="ranking mb-4">Barbecue Sauce</li>
-                      <li className="ranking mb-4">Curry Sauce</li>
-                      <li className="ranking mb-4">Chili Sauce</li>
-                      <li className="ranking mb-4">Sweet Sour Sauce</li>
-                      <li className="ranking mb-4">Sour Cream Sauce, Ketchup, Mayonnaise (there are better ones)</li>
-                      <li className="ranking mb-4">Mustard Sauce (easy the worst)</li>
+                      <li className="ranking">Buttermilk Ranch Dip (easy the best of all)</li>
+                      <li className="ranking">Barbecue Sauce</li>
+                      <li className="ranking">Curry Sauce</li>
+                      <li className="ranking">Chili Sauce</li>
+                      <li className="ranking">Sweet Sour Sauce</li>
+                      <li className="ranking">Sour Cream Sauce, Ketchup, Mayonnaise (there are better ones)</li>
+                      <li className="ranking">Mustard Sauce (easy the worst)</li>
                     </ol>
                   </Element>
                 </Element>

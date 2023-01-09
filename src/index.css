@@ -118,6 +118,7 @@ li.ranking::before {
 li.ranking {
     counter-increment: counts;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 div.blogGrid {
