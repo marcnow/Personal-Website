@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className="min-h-[24px]" />
       <div className="flex justify-between mb:p-2">
         <div>
-          <a className="items-center flex mt-4" href="/">
+          <a className="items-center flex mt-4 lp:pl-3" href="/">
             <img className="w-12 h-12 align-middle rounded-[50%] mr-2" alt="Marc Nowakowski" src={profile} />
             <span className="name font-bold">Marc Nowakowski</span>
           </a>
