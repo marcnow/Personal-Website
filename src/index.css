@@ -39,7 +39,7 @@ th {
 
 p {
     margin-bottom: 1.5rem;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 2rem;
     overflow-wrap: break-word;
     color: white;
@@ -101,6 +101,24 @@ h3 {
     color: #ff5277;
 }
 
+p.about, li.about {
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+    letter-spacing: 0.025rem;
+    text-align: justify;
+}
+
+div.about {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 2rem;
+    letter-spacing: 0.025rem;
+    text-align: justify;
+}
+
 img.icon {
     margin-left: 2rem;
     width: 250px;
@@ -142,6 +160,10 @@ aside.tableOfContents {
 
 .robotoMono {
     font-family: 'Roboto Mono', monospace;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .listItem::before {
@@ -242,7 +264,7 @@ a:hover::before {
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     h3 {
@@ -253,8 +275,17 @@ a:hover::before {
         font-size: 17px;
     }
 
+    p.about {
+        font-size: 20px;
+    }
+
+    li.about {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
     th, td {
-        font-size: 0.65rem;
+        font-size: 0.83rem;
     }
 
     img.icon {
@@ -321,6 +352,10 @@ a:hover::before {
     }
 
     .hamb{
+        display: none;
+    }
+
+    .likeHeart{
         display: none;
     }
 }

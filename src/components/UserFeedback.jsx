@@ -5,7 +5,7 @@
 import React from 'react';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import {
-  collection, addDoc, updateDoc, getDoc, setDoc, doc,
+  getDoc, setDoc, doc,
 } from 'firebase/firestore';
 import { pink } from '@mui/material/colors';
 import { db } from '../firebase';
@@ -24,7 +24,6 @@ export default function userFeedback(props) {
       await setDoc(doc(db, 'feedback', blogname), {
         like: newLikes,
       });
-      console.log('Document written with ID:');
     } catch (ex) {
       console.error('Error adding document: ', ex);
     }
@@ -42,11 +41,11 @@ export default function userFeedback(props) {
   }, []);
   // ff5277
   return (
-    <div className="flex pt-8 items-center">
+    <div className="flex pt-8 mb:pt-0 items-center">
       <button onClick={writeToDatabase}>
         <FavoriteIcon sx={{ fontSize: 60, color: '#ff5277' }} />
       </button>
-      <h3 className="ml-3 font-bold text-2xl mb:text-xl">{likes}</h3>
+      <h3 className="ml-3 font-bold text-2xl mb:text-2xl">{likes}</h3>
     </div>
   );
 }

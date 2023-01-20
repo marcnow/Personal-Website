@@ -83,6 +83,9 @@ export default function theGreatChickenNuggetSauceRanking() {
                   </Element>
                 </Element>
                 <p>On more rankings and further disussions!</p>
+                <div className="likeHeart">
+                  <UserFeedback blogName="theGreatChickenNuggetSauceRanking" />
+                </div>
               </article>
             </div>
           </div>
