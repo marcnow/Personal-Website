@@ -9,11 +9,11 @@ export default function MyWork() {
       <div>
         <div className="mb:p-3 lp:p-3">
           <h1 className="pb-5">About me</h1>
-          <p className="robotoMono">
+          <p className="about">
             I&apos;ve never been the best at School or University, always been just a curious guy.
             I&apos;m always interested in learning new Stuff and dive deeper into specific Themes. That&apos;s also why I teached myself Web Development, as you can see this website.
           </p>
-          <p className="robotoMono pb-8">
+          <p className="about pb-8">
             Sometimes I also post random stuff on my
             {' '}
             <a href="/blog" className="hover:underline">Blog</a>
