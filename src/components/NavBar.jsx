@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div className="primaryColor">
       <div className="min-h-[24px]" />
-      <div className="flex justify-between">
+      <div className="flex justify-between mb:p-2">
         <div>
           <a className="items-center flex mt-4 lp:pl-3" href="/">
             <img className="w-12 h-12 align-middle rounded-[50%] mr-2" alt="Marc Nowakowski" src={profile} />
