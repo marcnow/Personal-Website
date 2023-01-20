@@ -7,7 +7,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import {
   getDoc, setDoc, doc,
 } from 'firebase/firestore';
-import { pink } from '@mui/material/colors';
 import { db } from '../firebase';
 
 // retrieve data (amount of likes) from db
@@ -25,7 +24,7 @@ export default function userFeedback(props) {
         like: newLikes,
       });
     } catch (ex) {
-      console.error('Error adding document: ', ex);
+      setLikes(likes);
     }
   }
 
