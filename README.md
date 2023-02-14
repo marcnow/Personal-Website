@@ -16,7 +16,8 @@ https://marcnowakowski.io
 4. Access it on localhost:3000
 
 ### Future venture for this project
--maybe implement comment function on blogs
--integrate backend services
--like/dislike functionality in blog
--more? 
+- maybe implement comment function on blogs
+- integrate backend services
+- better way for like functionality
+- fetch data when loading root page
+- find font for paragraphs
