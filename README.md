@@ -2,12 +2,12 @@
 https://marcnowakowski.io
 
 ### Dev-Stack
--HTML, CSS, JavaScript
--React, TailwindCSS
+- HTML, CSS, JavaScript
+- React, TailwindCSS
 
 ### Hosting
--Domain is registred at NameCheap
--Application is hosted on AWS Amplify
+- Domain is registred at NameCheap
+- Application is hosted on AWS Amplify
 
 ### Run it locally
 1. Clone this repository
