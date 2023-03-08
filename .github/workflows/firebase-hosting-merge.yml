@@ -11,13 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_WEBSITE_A9354 }}'
-          channelId: live
-          projectId: personal-website-a9354
       - name: Create Env File 
         run: |
           touch .env
@@ -28,4 +21,11 @@ jobs:
           echo REACT_APP_MESSAGE_SENDER_ID=${{ vars.REACT_APP_MESSAGE_SENDER_ID }} >> .env
           echo REACT_APP_APP_ID=${{ vars.REACT_APP_APP_ID }} >> .env
           cat .env
+      - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_WEBSITE_A9354 }}'
+          channelId: live
+          projectId: personal-website-a9354
 
