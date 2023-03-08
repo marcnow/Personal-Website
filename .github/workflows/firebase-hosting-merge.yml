@@ -18,3 +18,14 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_WEBSITE_A9354 }}'
           channelId: live
           projectId: personal-website-a9354
+      - name: Create Env File 
+        run: |
+          touch.env
+          echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
+          echo REACT_APP_AUTH_DOMAIN=${{ secrets.REACT_APP_AUTH_DOMAIN }} >> .env
+          echo REACT_APP_PROJECT_ID=${{ secrets.REACT_APP_PROJECT_ID }} >> .env
+          echo REACT_APP_STORAGE_BUCKET=${{ secrets.REACT_APP_STORAGE_BUCKET }} >> .env
+          echo REACT_APP_MESSAGE_SENDER_ID=${{ secrets.REACT_APP_MESSAGE_SENDER_ID }} >> .env
+          echo REACT_APP_APP_ID=${{ secrets.REACT_APP_APP_ID }} >> .env
+          cat .env
+
