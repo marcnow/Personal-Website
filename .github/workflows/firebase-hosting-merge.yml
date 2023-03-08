@@ -20,7 +20,7 @@ jobs:
           projectId: personal-website-a9354
       - name: Create Env File 
         run: |
-          touch.env
+          touch .env
           echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
           echo REACT_APP_AUTH_DOMAIN=${{ secrets.REACT_APP_AUTH_DOMAIN }} >> .env
           echo REACT_APP_PROJECT_ID=${{ secrets.REACT_APP_PROJECT_ID }} >> .env
