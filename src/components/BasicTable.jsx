@@ -40,7 +40,7 @@ export default function BasicTable(props) {
   };
 
   return (
-    <div className="about">
+    <div className="robotoMono about">
       <table>
         <thead>
           <tr>

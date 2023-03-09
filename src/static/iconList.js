@@ -28,7 +28,7 @@ const iconList = [
     skills: ['AWS, DigitalOcean, Heroku'],
   },
   {
-    key: 1,
+    key: 4,
     name: 'Electronic',
     img: electronics,
     skills: ['Embedded Systems',
