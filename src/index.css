@@ -103,7 +103,7 @@ h3 {
 
 p.about, li.about {
     font-weight: 200;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 2rem;
     overflow-wrap: break-word;
     letter-spacing: 0.025rem;
@@ -159,10 +159,6 @@ aside.tableOfContents {
 
 .robotoMono {
     font-family: 'Roboto Mono', monospace;
-}
-
-.ubuntu {
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .listItem::before {
@@ -275,11 +271,11 @@ a:hover::before {
     }
 
     p.about {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     li.about {
-        font-size: 20px;
+        font-size: 19px;
         margin-bottom: 0;
     }
 
