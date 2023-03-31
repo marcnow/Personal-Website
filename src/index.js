@@ -9,14 +9,18 @@ import Software from './components/routes/Software';
 import Blog from './components/routes/Blog';
 import TheGreatChickenNuggetSauceRanking from './components/routes/TheGreatChickenNuggetSauceRanking';
 import MoreToCome from './components/routes/MoreToCome';
+import Pomodoro from './components/Pomodoro';
+import NotFound from './components/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
+      <Route path="*" element={<NotFound />} />
       <Route path="/" element={<App />} />
       <Route path="/software" element={<Software />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/pomodoro" element={<Pomodoro />} />
       <Route path="/blog/the-great-chicken-nugget-sauce-ranking" element={<TheGreatChickenNuggetSauceRanking />} />
       <Route path="/blog/more-to-come" element={<MoreToCome />} />
     </Routes>
